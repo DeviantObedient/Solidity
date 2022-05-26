@@ -8,7 +8,7 @@ contract Lottery{
     address public manager;
 
     constructor(){
-        manager = msg.sender;
+        manager = msg.sender;// maybe better to do manager = tx.origin 
         //Challenge#2:manager automatically added without sending ETH
         players.push(payable(manager));
     }
