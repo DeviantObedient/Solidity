@@ -1,5 +1,5 @@
 //SPDX-License-Identifier: No license
-import "contracts/Auction.sol";
+import "../Auction.sol";
 
 pragma solidity ^0.8.0;
 
