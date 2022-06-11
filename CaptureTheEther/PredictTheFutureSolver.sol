@@ -55,7 +55,6 @@ contract PredictTheFutureSolver{
         owner = payable(msg.sender);
         deployedContract = IPredictTheFuture(_deployedContractAddress);
     }
-
     modifier onlyOwner(){
         require(msg.sender == owner, "Only Owner can do that");
         _;
@@ -73,6 +72,5 @@ contract PredictTheFutureSolver{
         payable(tx.origin).transfer(address(this).balance);
     }
     receive() external payable{
-
     }
 }
